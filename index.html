@@ -1,85 +1,171 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My GIF Collection</title>
+
+<title>AHMETOKUMUS ARCHIVE</title>
 
 <style>
-body{
+
+*{
     margin:0;
-    background:#0f0f0f;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#050505;
     color:white;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
+    overflow-x:hidden;
 }
 
 header{
+    padding:60px 20px;
     text-align:center;
-    padding:25px;
-    font-size:32px;
-    font-weight:bold;
-    background:#151515;
-    border-bottom:2px solid #222;
+    background:linear-gradient(135deg,#111,#1d1d1d);
+    border-bottom:2px solid #202020;
+}
+
+header h1{
+    font-size:50px;
+    letter-spacing:3px;
+}
+
+header p{
+    margin-top:12px;
+    color:#999;
+    font-size:18px;
 }
 
 .gallery{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:15px;
-    padding:20px;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding:35px;
 }
 
 .card{
-    background:#1b1b1b;
-    border-radius:18px;
+    background:#111;
+    border-radius:24px;
     overflow:hidden;
-    transition:0.2s;
+    transition:0.25s;
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
 }
 
 .card:hover{
-    transform:scale(1.03);
+    transform:translateY(-8px) scale(1.02);
 }
 
-.card img{
+.card img,
+.card video{
     width:100%;
     display:block;
+    background:black;
 }
 
-.title{
-    padding:12px;
+.info{
+    padding:20px;
+}
+
+.info h2{
+    margin-bottom:10px;
+    font-size:22px;
+}
+
+.info p{
+    color:#aaa;
+    line-height:1.5;
+}
+
+footer{
+    text-align:center;
+    padding:35px;
+    margin-top:30px;
+    border-top:1px solid #1f1f1f;
+    color:#888;
     font-size:18px;
 }
+
+footer a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer a:hover{
+    color:#7d5cff;
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
-AHMETOKUMUS GIF ARCHIVE
+    <h1>AHMETOKUMUS ARCHIVE</h1>
+    <p>internet kaosundan toplanmış içerikler</p>
 </header>
 
-<div class="gallery">
+<section class="gallery">
 
-<div class="card">
-<img src="gifs/destanmi.gif">
-<div class="title">DESTANMI YAZIYON REIS</div>
-</div>
+    <div class="card">
 
-<div class="card">
-<img src="gifs/haramball.gif">
-<div class="title">Simeone Haramball Today</div>
-</div>
+        <video controls autoplay muted loop>
+            <source src="gifs/gifs/VID-20260515-WA0018.mp4" type="video/mp4">
+        </video>
 
-<div class="card">
-<img src="gifs/cat.gif">
-<div class="title">Sad Cat</div>
-</div>
+        <div class="info">
+            <h2>Reaction Video</h2>
+            <p>tam gece 03:17 internet enerjisi</p>
+        </div>
 
-<div class="card">
-<img src="gifs/reaction.gif">
-<div class="title">Reaction Meme</div>
-</div>
+    </div>
 
-</div>
+    <div class="card">
+
+        <img src="gifs/gifs/images (26).jpeg" alt="meme">
+
+        <div class="info">
+            <h2>Meme Drop #1</h2>
+            <p>beyin hücrelerini farklı dimension'a yollar</p>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <img src="gifs/gifs/images (27).jpeg" alt="meme">
+
+        <div class="info">
+            <h2>Meme Drop #2</h2>
+            <p>internetten kaçış yok</p>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <img src="gifs/gifs/images (28).jpeg" alt="meme">
+
+        <div class="info">
+            <h2>Meme Drop #3</h2>
+            <p>galerinin final boss'u</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    İletişim:
+    <br><br>
+
+    <a href="https://instagram.com/ahmetokumus1320" target="_blank">
+        Instagram / ahmetokumus1320
+    </a>
+</footer>
 
 </body>
 </html>
