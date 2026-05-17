@@ -1,76 +1,84 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>İsmin | Artist</title>
+<title>My GIF Collection</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0a0a0a;
-    color: white;
+body{
+    margin:0;
+    background:#0f0f0f;
+    color:white;
+    font-family:Arial, sans-serif;
 }
 
-header {
-    text-align: center;
-    padding: 80px 20px;
+header{
+    text-align:center;
+    padding:25px;
+    font-size:32px;
+    font-weight:bold;
+    background:#151515;
+    border-bottom:2px solid #222;
 }
 
-h1 {
-    font-size: 42px;
-    letter-spacing: 2px;
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    padding:20px;
 }
 
-p {
-    opacity: 0.7;
+.card{
+    background:#1b1b1b;
+    border-radius:18px;
+    overflow:hidden;
+    transition:0.2s;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-    padding: 20px;
+.card:hover{
+    transform:scale(1.03);
 }
 
-.gallery img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: 0.3s;
+.card img{
+    width:100%;
+    display:block;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
-    opacity: 0.8;
-}
-
-.footer {
-    text-align: center;
-    padding: 40px;
-    opacity: 0.6;
+.title{
+    padding:12px;
+    font-size:18px;
 }
 </style>
-
 </head>
-
 <body>
 
 <header>
-    <h1>Ahmet Okumuş</h1>
-    <p>Digital Artist / Creator</p>
+AHMETOKUMUS GIF ARCHIVE
 </header>
 
 <div class="gallery">
-    <img src="https://picsum.photos/400?1">
-    <img src="https://picsum.photos/400?2">
-    <img src="https://picsum.photos/400?3">
-    <img src="https://picsum.photos/400?4">
+
+<div class="card">
+<img src="gifs/destanmi.gif">
+<div class="title">DESTANMI YAZIYON REIS</div>
 </div>
 
-<div class="footer">
-    <p>Instagram: @ahmetokumus1320</p>
+<div class="card">
+<img src="gifs/haramball.gif">
+<div class="title">Simeone Haramball Today</div>
+</div>
+
+<div class="card">
+<img src="gifs/cat.gif">
+<div class="title">Sad Cat</div>
+</div>
+
+<div class="card">
+<img src="gifs/reaction.gif">
+<div class="title">Reaction Meme</div>
+</div>
+
 </div>
 
 </body>
